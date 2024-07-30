@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<style>
+    * {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    #header {
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+        border-top: 8px solid #FFF555;
+
+
+    }
+
+    #Logo-section {
+        align-items: center;
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img {
+        height: 120px;
+        width: 120px
+    }
+
+    #txt {
+        font-family: sans-serif;
+        margin-left: 20px;
+        font-size: 23px;
+
+    }
+
+    #txt:hover {
+        color: #FFF555;
+    }
+
+
+    #ul_nav {
+        float: left;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: row;
+        color: black;
+        justify-content: space-evenly;
+        gap: 80px;
+
+    }
+
+    #ul_nav li {
+
+        font-size: 20px;
+        list-style: none;
+        cursor: pointer;
+        font-family: sans-serif;
+
+
+    }
+
+    #ul_nav li:hover {
+
+        border-bottom: 3px solid black;
+
+
+    }
+
+    #btn button {
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 25px;
+        font-size: 20px;
+        align-items: end;
+        float: right;
+        margin-left: 600px;
+        width: 175px;
+        border-radius: 40px;
+        font-family: sans-serif;
+
+    }
+
+    #btn button:hover {
+        color: black;
+    }
+
+    #hero-section {
+        background-image: url(carbg.png.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+    }
+
+    #hero-section h1 {
+        font-size: 140px;
+        color: white;
+        margin-left: 80px;
+        font-family: sans-serif;
+        margin-top: 10px;
+    }
+
+    #hero-section button {
+        margin-left: 60px;
+        padding: 30px;
+        width: 380px;
+        border-radius: 90px;
+        background-color: white;
+        font-size: 18px;
+        border: 0px;
+    }
+
+    #hero-section button:hover {
+        background-color: #FFF555;
+
+    }
+
+    #hero-section button i {
+        margin-left: 100px;
+        font-size: 20px;
+        background-color: #FFF555;
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    #hero-section p {
+        font-size: 40px;
+        margin-left: 60px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #para {
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-left: 40px;
+    }
+
+    #container {
+
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    #box1 {
+        font-family: sans-serif;
+        margin-left: 35px;
+
+    }
+
+    #box1 p {
+        font-size: 20px;
+        color: rgb(129, 124, 124);
+    }
+
+    #box1 h2 {
+        color: rgb(104, 100, 100);
+        font-size: 20px;
+    }
+
+    #box2 {
+        font-family: sans-serif;
+        margin-right: 35px;
+
+    }
+
+    #box2 p {
+        font-size: 20px;
+        color: rgb(129, 124, 124);
+    }
+
+    #box2 h2 {
+        color: rgb(104, 100, 100);
+        font-size: 20px;
+    }
+
+    #box3 {
+        font-family: sans-serif;
+        margin-right: 35px;
+
+    }
+
+    #box3 p {
+        font-size: 20px;
+        color: rgb(129, 124, 124);
+    }
+
+    #box3 h2 {
+        color: rgb(104, 100, 100);
+        font-size: 20px;
+    }
+
+    .separator {
+        border-top: 2px solid #ccc9c9;
+        margin: 30px 0px;
+    }
+
+    #para1 {
+        font-size: 25px;
+        margin-left: 50px;
+        font-family: sans-serif;
+    }
+
+    #img-sec1 {
+        display: flex;
+        padding: 20px;
+        gap: 30px;
+
+    }
+
+    #img6 {
+        width: 760px;
+        margin-left: 30px;
+        border-radius: 20px;
+        transition: transform 0.5s ease;
+    }
+
+    #img6:hover {
+        transform: scale(1.05);  /* Zoom in on hover */
+       
+    }
+
+    #img14 {
+        width: 790px;
+        border-radius: 20px;
+        transition: transform 0.5s ease;
+    }
+    #img14:hover {
+        transform: scale(1.05);  /* Zoom in on hover */
+       
+    }
+    .car1 {
+        display: flex;
+        gap: 550px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+
+    .car2 {
+        display: flex;
+        gap: 460px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+
+    #sec2 {
+        display: flex;
+        gap: 280px;
+        margin-top: 80px;
+    }
+
+    #para2 {
+        font-size: 70px;
+        font-family: sans-serif;
+        margin-left: 60px;
+    }
+
+    #car {
+        border-radius: 20px;
+        margin-top: 70px;
+    }
+
+    #sec3 {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 100px;
+    }
+
+    #para3 {
+        font-size: 70px;
+        font-family: sans-serif;
+
+    }
+
+    #car3 {
+        height: 400px;
+        width: 400px;
+        margin-top: 80px;
+        margin-left: 280px;
+        border-radius: 20px;
+    }
+
+    #sec4 {
+        margin-top: 100px;
+    }
+
+    #con_box {
+        gap: 10px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
+
+    }
+
+    #con-box1 {
+        border: 1px solid;
+        border-radius: 15px;
+        justify-content: space-between;
+        margin-right: 15px;
+        height: 650px;
+        width: 350px;
+
+    }
+
+    #con-box1 h2 {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(83, 75, 75);
+    }
+
+    #con-box1 p {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(156, 148, 148);
+        font-size: 25px;
+    }
+
+    #con-box1 img {
+        width: 350px;
+        height: 500px;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        transition: transform 0.5s ease;
+       
+    }
+    #con-box1 img:hover {
+        transform: scale(1.04);  
+    }
+
+    #con-box2 {
+        border: 1px solid;
+        border-radius: 15px;
+        justify-content: space-between;
+        margin-right: 15px;
+        height: 650px;
+        width: 350px;
+
+    }
+
+    #con-box2 h2 {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(83, 75, 75);
+    }
+
+    #con-box2 p {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(156, 148, 148);
+        font-size: 25px;
+    }
+
+    #con-box2 img {
+        width: 350px;
+        height: 500px;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        transition: transform 0.5s ease;
+    }
+    #con-box2 img:hover {
+        transform: scale(1.04);  
+       
+    }
+
+    #con-box3 {
+        border: 1px solid;
+        border-radius: 15px;
+        justify-content: space-between;
+        margin-right: 15px;
+        height: 650px;
+        width: 350px;
+
+    }
+
+    #con-box3 h2 {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(83, 75, 75);
+    }
+
+    #con-box3 p {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(156, 148, 148);
+        font-size: 25px;
+    }
+
+    #con-box3 img {
+        width: 350px;
+        height: 500px;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        transition: transform 0.5s ease;
+    }
+    #con-box3 img:hover {
+        transform: scale(1.04);  
+       
+    }
+
+    #con-box4 {
+        border: 1px solid;
+        border-radius: 15px;
+        justify-content: space-between;
+        margin-right: 15px;
+        height: 650px;
+        width: 350px;
+    }
+
+    #con-box4 h2 {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(83, 75, 75);
+    }
+
+    #con-box4 p {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgb(156, 148, 148);
+        font-size: 25px;
+    }
+
+    #con-box4 img {
+        width: 350px;
+        height: 500px;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        transition: transform 0.5s ease;
+    }
+    #con-box4 img:hover {
+        transform: scale(1.04);  
+       
+    }
+
+    #sec5 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 550px;
+
+
+    }
+
+    #sec5-box1 {
+        background-image: url(image3.jpg);
+        height: 1200px;
+        width: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+    #box1-test {
+        background-color: white;
+        height: 200px;
+        width: 500px;
+        margin-top: 750px;
+        margin-left: 100px;
+        padding: 50px;
+        border-radius: 20px;
+
+    }
+
+    #box1-test h2 {
+        font-family: sans-serif;
+        font-size: 25px;
+        color: rgb(83, 75, 75);
+    }
+
+    #box1-test p {
+        font-family: sans-serif;
+        font-size: 22px;
+        color: rgb(156, 148, 148);
+    }
+
+    #sec5-box2 {
+        margin-top: 100px;
+        margin-left: 200px;
+
+    }
+
+    #box2-p1 {
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+
+    #box2-p2 {
+        font-family: sans-serif;
+        font-size: 70px;
+        border-bottom: 4px solid black;
+    }
+
+    #box2-p3 {
+        font-family: sans-serif;
+        font-size: 70px;
+        color: rgb(156, 148, 148);
+        line-height: 1.8;
+    }
+
+    #sec6 {
+        background-image: url('background2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        margin-top: 100px;
+    }
+
+    #sec6 p {
+        font-size: 140px;
+        color: black;
+        font-family: sans-serif;
+        margin: 0;
+        /* Removes any default margin */
+    }
+
+    #sec6 button {
+        padding: 20px;
+        width: 450px;
+        border-radius: 90px;
+        background-color: white;
+        font-size: 22px;
+        border: 0px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+
+    #sec6 button:hover {
+        background-color: #FFF555;
+    }
+
+    #sec6 button i {
+        margin-left: 180px;
+        font-size: 20px;
+        background-color: #FFF555;
+        padding: 30px;
+        border-radius: 50px;
+    }
+    #sec7{
+        display: flex;
+        flex-direction: row;
+        gap: 240px;
+        margin-top: 200px;
+    }
+    #sec7-form{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    #field{
+        height: 90px;
+        width: 700px;
+        border-radius: 15px;
+        margin: 20px 0px 60px 0px;
+        border: 2px solid rgb(204, 198, 198);
+    }
+    #sec7-text{
+        font-size: 40px;
+        font-family: sans-serif;
+        margin-left: 60px;
+    }
+    #sec7-form button {
+        padding: 20px;
+        width: 480px;
+        border-radius: 90px;
+        background-color: black;
+        font-size: 22px;
+        border: 0px;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    #sec7-form button:hover {
+        background-color: #FFF555;
+        color: black;
+    }
+
+    #sec7-form button i {
+        margin-left: 230px;
+        font-size: 20px;
+        background-color: #FFF555;
+        padding: 30px;
+        border-radius: 50px;
+        color: black;
+        
+    }
+</style>
+
+<body>
+    <div id="header">
+        <div id="Logo-section">
+            <img id="img" src="car logo.png">
+            <h3 id="txt">EV Dealer</h3>
+
+        </div>
+        <div>
+            <ul id="ul_nav">
+                <li>Home </li>
+                <li>About </li>
+                <li>Events</li>
+
+            </ul>
+        </div>
+        <div id="btn">
+
+            <button>Contacts</button>
+
+        </div>
+    </div>
+    <div id="hero-section">
+        <h1>EV <br>Dealer</h1>
+        <button>View more <i class="fas fa-arrow-right"></i> </button>
+        <p>Our showroom is a haven <br>for cutting-edge electric vehicles </p>
+    </div>
+    <div id="para">
+        <p>EV dealerships play a <br>crucial role in promoting <br> these benefits</p>
+    </div>
+    <div id="container">
+        <div id="box1">
+            <h2>01</h2>
+            <div class="separator"></div>
+            <h2>Environmental Impact</h2>
+            <p>Electric vehicles produce fewer emissions <br> compared to traditional gasoline-powered <br> vehicles.
+            </p>
+        </div>
+
+        <div id="box2">
+            <h2>02</h2>
+            <div class="separator"></div>
+            <h2>Cost Savings</h2>
+            <p>Electric vehicles offer potential cost savings <br>for customers, and EV dealerships play a <br>crucial
+                role in promoting these benefits.</p>
+        </div>
+
+        <div id="box3">
+            <h2>03</h2>
+            <div class="separator"></div>
+            <h2>Technology and Innovation</h2>
+            <p>EV dealerships are at the forefront of <br>promoting advanced automotive technology <br>and innovation.
+            </p>
+        </div>
+
+    </div>
+    <div>
+        <p id="para1">A few places where an EV dealer</p>
+        <div id="img-sec1">
+            <img src="image6.jpg" alt="" id="img6">
+            <img src="image14.jpg" alt="" id="img14">
+
+
+        </div>
+    </div>
+    <div class="car1">
+        <p>Urban Centers</p>
+        <p>Technology Hubs</p>
+    </div>
+    <div>
+
+        <div id="img-sec1">
+            <img src="image7.jpg" alt="" id="img6">
+            <img src="image16.jpg" alt="" id="img14">
+
+
+        </div>
+    </div>
+    <div class="car2">
+        <p>Green Communities</p>
+        <p>Suburban Area</p>
+    </div>
+    <div id="sec2">
+        <p id="para2">Welcome <br>to our <br>Electric <br>Vehicle <br>Dealer</p>
+        <img src="carbg.png.jpg" alt="" id="car">
+
+    </div>
+    <div id="sec3">
+        <p id="para3">Our knowledgeable and <br>friendly staff is here to guide <br>you through the exciting <br>world
+            of EVs, helping you <br>find the perfect model to <br>suit your lifestyle and <br>preferences.</p>
+        <img src="image1.jpg" alt="" id="car3">
+    </div>
+
+    <div id="sec4">
+        <p id="para1">Electric vehicle events</p>
+        <div id="con_box">
+            <div id="con-box1">
+                <img src="image3.jpg">
+                <h2>Electric Car <br>Launch</h2>
+                <p>March 18, 2030</p>
+            </div>
+
+            <div id="con-box2">
+                <img src="image9.jpg">
+                <h2>Ev Seminar <br>Series</h2>
+                <p>April 6, 2030</p>
+            </div>
+
+            <div id="con-box3">
+                <img src="image15.jpg">
+                <h2>Ev Family <br>fun Day</h2>
+                <p>June 10, 2023 </p>
+            </div>
+            <div id="con-box4">
+                <img src="image17.jpg">
+                <h2>National Drive <br>Electric</h2>
+                <p>September 24, 2023 </p>
+            </div>
+        </div>
+        <div id="sec5">
+            <div id="sec5-box1">
+                <div id="box1-test">
+                    <h2>Test Drives</h2>
+                    <p>To familiarize potential buyers <br>with the unique driving <br>experience of electric
+                        vehicles,<br> dealerships offer test drives and <br>experience centers.</p>
+                </div>
+            </div>
+            <div id="sec5-box2">
+                <p id="box2-p1">Here's an overview of key aspects <br>
+                    associated with EV dealer services:
+                </p>
+                <p id="box2-p2">Test Drives</p>
+                <p id="box2-p3">Charging <br>Customized <br>Servies <br>Community</p>
+            </div>
+        </div>
+        <div id="sec6">
+            <p> Come into our <br> dealership, and learn <br> more</p>
+            <button>Contacts <i class="fas fa-arrow-right"></i> </button>
+        </div>
+        <div id="sec7">
+            <div id="sec7-text">
+                <p>Managers will select an electric <br>car according to your needs <br>and desires</p>
+
+            </div>
+            <div id="sec7-form">
+                <label for="FirstName">First name*</label>
+                <input type="text" id="field">
+                <label for="lastname">Last name*</label>
+                <input type="text" id="field">
+                <label for="Company">Company</label>
+                <input type="text" id="field">
+                <label for="email">Email*</label>
+                <input type="text" id="field">
+                <label for="telephone">Telephone</label>
+                <input type="text" id="field">
+                <label for="youremail">Your email</label>
+                <input type="text" id="field">
+                <label for="address">Address</label>
+                <input type="text" id="field">
+                <label for="city">City</label>
+                <input type="text" id="field">
+                 <button>Send now<i class="fas fa-arrow-right"></i> </button>
+            </div>
+        </div>
+</body>
+
+</html>
